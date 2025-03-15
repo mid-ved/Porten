@@ -1,0 +1,452 @@
+@import url(https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400..900&display=swap);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    background: #000;
+    color: #fff;
+    font-family: sans-serif;
+    overflow-x: hidden;
+}
+
+header {
+    .contact {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        margin: 20px 3.5em;
+
+        font-size: 14px;
+        color: #969696;
+        
+        div {
+            /* position: absolute;
+            top: 20px; */
+
+            &.data {
+                /* left: 3.5em; */
+                width: 40%;
+            }
+
+            &.logsign {
+                /* right: 3.5em; */
+                width: 30%;
+                max-width: 250px;
+            }
+
+            img {
+                float: left;
+                margin-right: 10px;
+                width: 15px;
+            }
+
+            a {
+                color: #969696;
+                text-decoration: none;
+                transition: .3s;
+
+                &:hover { color: #fff; }
+            }
+        }
+    }
+
+    .head {
+        display: flex;
+        justify-content: space-around;
+
+        width: 100%;
+        background: #0F0F0F;
+        padding: 30px 10px 20px 10px;
+
+        /* position: absolute;
+        top: 60px; */
+
+        .logo img {
+            width: 80px;
+        }
+
+        .info {
+            ul {
+                display: flex;
+                list-style: none;
+                text-transform: uppercase;
+                
+                li, a {
+                    font-size: 14px;
+                    color: #969696;
+                    text-decoration: none;
+                    margin: 0 10px;
+                    transition: .5s;
+
+                    &:hover { color: #fff; }
+                }
+            }
+        }
+    }
+
+    .main {
+        position: relative;
+        text-align: center;
+
+        img.bg {
+            width: 100%;
+        }
+
+        .logo {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -100%);
+            border: #fff 2px solid;
+            padding: 50px 20px;
+
+            img {
+                width: 100%;
+            }
+
+            hr {
+                width: 100%;
+                margin: 5px 0;
+                opacity: 0.7;
+            }
+
+            p {
+                text-transform: uppercase;
+                font-size: 15px;
+                font-family: monospace;
+            }
+        }
+
+        .txt {
+            text-transform: uppercase;
+            font-size: 10px;
+            line-height: 20px;
+            font-family: system-ui;
+
+            width: 60%;
+            max-width: 700px;
+            min-width: 490px;
+            position: absolute;
+            top: 55%;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+}
+
+main {
+    .collection {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100%;
+        font-family: 'Playfair Display';
+        
+
+        div {
+            width: 40%;
+            margin: 30px;
+            text-align: center;
+
+            img {
+                width: 100%;
+            }
+        }
+
+        h2 {
+            font-weight: 750;
+            display: flex;
+            justify-content: center;
+            text-transform: uppercase;
+        }
+
+        .season20-21 {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            hr {
+                margin-top: 20px;
+                width: 30%;
+                opacity: 0.7;
+            }
+
+            .img {
+                display: flex;
+                justify-content: center;
+                width: 100%;
+
+                div {
+                    margin: 0 5px;
+                    width: 50%;
+
+                    img {
+                        width: 100%;
+                        height: auto;
+                        background: #191B1C;
+                        padding: 15px 10px;
+                    }
+
+                    p {
+                        font-size: 10px;
+                    }
+                }
+            }
+        }
+
+        .new-col {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            .content {
+                transform: translateY(-150%);
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+
+                h2 {
+                    text-transform: uppercase;
+                    width: 100%;
+                    font-size: 120%;
+                }
+
+                hr {
+                    width: 30%;
+                    margin: 20px 0;
+                    opacity: 0.7;
+                }
+
+                a {
+                    border: 2px solid #fff;
+                    color: #fff;
+                    text-decoration: none;
+                    padding: 5px 10px 6px 10px;
+                    font-family: system-ui;
+                    text-transform: uppercase;
+                    font-size: 12px;
+                    transition: .5s;
+
+                    &:hover {
+                        box-shadow: inset 3px 3px 10px 2px #fff;
+                    }
+                }    
+            }   
+        }
+
+        .image {
+            margin-top: -190px;
+            width: 50%;
+        }
+
+        .season18 {
+            width: 30%;
+            margin-top: -190px;
+            transform: translateX(-20px);
+
+            h2 {
+                width: 100%;
+                font-weight: 500;
+            }
+
+            hr {
+                margin: 20px 30%;
+                opacity: 0.7;
+            }
+
+            p {
+                font-size: 12px;
+                font-family: system-ui;
+            }
+        }
+    }
+
+    .receipts {
+        font-family: Playfair Display;
+        text-align: center;
+        margin-top: 40px;
+
+        h2 {
+            text-transform: uppercase;
+            font-weight: 750;
+        }
+
+        hr {
+            margin: 40px 45%;
+            opacity: 0.7;
+        }
+
+        .img {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            width: 100%;
+
+            div {
+                margin: 5px 8px;
+                width: 150px;
+
+                img {
+                    width: 100%;
+                    height: auto;
+                    background: #191B1C;
+                    padding: 15px 10px;
+                }
+
+                p {
+                    font-size: 10px;
+                }
+            }
+        }
+    }
+
+    .brands {
+        font-family: Playfair Display;
+        text-align: center;
+        margin-top: 40px;
+
+        h2 {
+            text-transform: uppercase;
+            font-weight: 750;
+        }
+
+        hr {
+            margin: 30px 45%;
+            opacity: 0.7;
+        }
+
+        .img {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            width: 100%;
+        }
+    }
+}
+
+footer {
+    margin-top: 30px;
+    position: relative;
+
+    .image {
+        overflow: hidden;
+
+        img {
+            width: 100%;
+        }
+
+        .txt {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            overflow: hidden;
+            height: 40%;
+
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+
+
+            div {
+                width: 25%;
+                margin: 0 20px;
+
+                h3 {
+                    font-family: Playfair Display;
+                    text-transform: uppercase;
+                    font-weight: 100;
+                    margin-bottom: 20px;
+                }
+
+                p {
+                    font-size: 12px;
+                    font-family: system-ui;
+                }
+            }
+
+            .categories {
+                .link {
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: flex-start;
+
+                    width: 100%;
+                    transform: translateX(-10px);
+                    margin: 0;
+
+                    a {
+                        margin: 5px 10px;
+                        background: #0f0f0f;
+                        padding: 10px;
+                        font-size: 12px;
+                        color: #fff;
+                        text-decoration: none;
+                        transition: .3s;
+
+                        &:hover {
+                            background: #191B1C;
+                        }
+                    }
+                }
+            }
+
+            .newsletter {
+                input, button {
+                    padding: 10px 20px;
+                    margin: 10px -2px;
+                    border: 0;
+                }
+        
+                input {
+                    opacity: 0.5;
+                    outline: none;
+                    width: 70%;
+                    max-width: 200px;
+                }
+        
+                button {
+                    background: #0f0f0f;
+                    color: #fff;
+                    transition: 0.3s;
+        
+                    &:hover {
+                        background: #191B1C;
+                    }
+        
+                    &:active {
+                        background: #0f0f0f;
+                    }
+                }
+            }
+        }
+    }
+
+    .inf {
+        display: flex;
+        margin: 30px 50px;
+        justify-content: space-between;
+
+        p {
+            opacity: 0.5;
+            font-size: 14px;
+        }
+
+        a {
+            font-size: 14px;
+            color: #fff;
+            opacity: 0.7;
+            transition: .3s;
+            
+            &:hover { opacity: 0.8; }
+        }
+    }
+}
